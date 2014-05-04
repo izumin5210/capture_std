@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = CaptureStd::VERSION
   spec.authors       = ["izumin5210"]
   spec.email         = ["masayuki@izumin.info"]
-  spec.summary       = %q{Add stream capture method to Kernel module.}
-  spec.description   = %q{Add stream capture method to Kernel module.}
+  spec.summary       = %q{Add `capture` to Kernel.}
+  spec.description   = %q{Add `capture` to Kernel.}
   spec.homepage      = "http://izumin.info/"
   spec.license       = "MIT"
 

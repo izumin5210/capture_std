@@ -1,6 +1,6 @@
 # CaptureStd
 
-TODO: Write a gem description
+Add `capture` to Kernel.
 
 ## Installation
 
@@ -18,11 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+capture
+```
+
+stdout = capture(:stdout) do
+  puts "message"
+end
+
+stdout # => "message\n"
+
+
+stderr = capture(:stderr) do
+  warn "error message"
+end
+
+stdout # => "error message\n"
+```
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/capture_std/fork )
+1. Fork it ( http://github.com/izumin5210/capture_std/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
