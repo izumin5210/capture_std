@@ -1,8 +1,8 @@
 require "capture_std/version"
 require "tempfile"
 
-module CaptureStd
-  def self.capture(stream=:stdout)
+module Kernel
+  def capture(stream=:stdout)
     captured_stream = Tempfile.new(stream.to_s)
     io = eval("$#{stream}")
     origin_io = io.dup
